@@ -70,3 +70,13 @@ function renderModal(projId) {
   `;
   $('.modal-render').html(strHtml);
 }
+
+function onGetMailDetails(ev) {
+  ev.preventDefault();
+  var address = $('#input-email').val();
+  var subject = $('#input-subject').val();
+  var body = $('#input-body').val();
+  var strHtml = `https://mail.google.com/mail/?view=cm&fs=1&to=${address}&su=${subject}&body=${body}`
+  window.open(strHtml);
+  
+}

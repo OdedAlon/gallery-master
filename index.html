@@ -13,6 +13,7 @@
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
   <!-- Custom fonts for this template -->
   <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
@@ -34,7 +35,24 @@
 
     <!-- Contact -->
     <section id="contact">
-      <h4>Contact Me</h4>
+      <h4 class="mb-5">Contact Me</h4>
+
+      <form class="send-mail text-center" onsubmit="onGetMailDetails(event)">
+        <div class="form-group mt-5>
+          <label for="input-email">Email address</label>
+          <input type="email" class="form-control" id="input-email" aria-describedby="emailHelp" placeholder="name@example.com">
+        </div>
+        <div class="form-group mt-1"></div>
+          <label for="input-subject">Subject</label>
+          <input type="text" class="form-control" id="input-subject" aria-describedby="emailHelp" placeholder="Type subject here">
+        </div>
+        <div class="form-group mt-3">
+          <label for="input-body">Message body</label>
+          <textarea class="form-control" id="input-body" rows="3" placeholder="Type message text here"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" >Submit</button>
+      </form>
+      </div>
     </section>
 
   </aside>
@@ -84,7 +102,7 @@
       <div class="row">
         <div class="col-lg-12 text-center">
           <h2 class="section-heading">Specialities</h2>
-          <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+          <h3 class="section-subheading text-muted">there are a lot of things I can do...</h3>
         </div>
       </div>
       <div class="row text-center">
@@ -132,7 +150,7 @@
         </div>
       </div>
       <div class="protfolio-container row">
-        
+
       </div>
     </div>
   </section>
@@ -145,7 +163,7 @@
         <div class="team-member">
           <img class="mx-auto rounded-circle" src="img/team/1.jpg" alt="">
           <h4>Oded Alon</h4>
-          <p class="text-muted">Boot-Stack Student</p>
+          <p class="text-muted">full-Stack Student</p>
           <ul class="list-inline social-buttons">
             <li class="list-inline-item">
               <a href="https://mail.google.com/mail/?view=cm&fs=1&to=oded345alon@gmail.com&su=SUBJECT&body=BODY">
@@ -177,11 +195,11 @@
     <div class="container">
       <div class="row">
         <div class="col-md-4 flex-align-center">
-          <a href="http://coding-academy.org" target="_blank">
+          <a href="http://coding-academy.org" target="_blank" hidden>
             <img src="./img/ca-logo.png" alt="">
           </a>
         </div>
-        <div class="col-md-4 flex-align-center">
+        <div class="col-md-4 flex-align-center" hidden>
           <ul class="list-inline social-buttons flex-align-center">
             <li class="list-inline-item">
               <a href="#">
@@ -217,7 +235,7 @@
   <!-- Portfolio Modals -->
 
   <div class="modal-render"></div>
- 
+
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/popper/popper.min.js"></script>
