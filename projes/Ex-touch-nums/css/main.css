@@ -1,0 +1,61 @@
+
+body {
+    text-align: center;
+    background-color: rgb(252, 201, 63);
+}
+
+
+.box {
+    box-align: center;
+    max-width: 570px;
+    margin: auto;
+    /* border: 1px solid rgb(188, 201, 206); */
+    border-radius: 8px;
+    /* background-color: rgb(172, 172, 173); */
+    padding: 10px;
+}
+
+button {
+    font-size: 20px;
+    margin: 30px;
+}
+
+table {
+    margin: 0 auto;
+    border-width: 5px;
+    background-color: rgb(172, 172, 173);
+    font-size: 30px;
+}
+
+.emptycell:hover {
+    background-color: lightsalmon;
+    cursor: pointer;
+}
+
+.fullcell {
+    background-color: rgb(192, 15, 24);
+}
+
+#stopWatch {
+    width: 280px;
+    height: auto; 
+    text-align: center; 
+    display: block; 
+    padding: 5px; 
+    margin: 0 auto;
+}
+
+#timer, #fulltime {
+    width: auto;
+    height: auto; 
+    padding: 10px; 
+    font-weight: bold; 
+    font-family: tahoma; 
+    display: block; 
+    border: 1px solid #eee; 
+    text-align: center; 
+    box-shadow: 0 0 5px #ccc; 
+    background: #fbfbf0; 
+    color: darkblue; 
+    border-bottom:4px solid darkgrey; 
+}

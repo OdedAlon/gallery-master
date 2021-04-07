@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Book-Shop</title>
+</head>
+
+<body onload="onInit()">
+
+    <head>
+        <header></header>
+        <h1>Book Shop</h1>
+    </head>
+    <section class="add-book">
+        <button onclick="showAddBookModal()">Add a book</button>
+        <form class="add-book-modal" onsubmit="onAddBook()" hidden>
+            <input name="book-name" placeholder="book's name"></input>
+            <input name="book-price" placeholder="book's price"></input>
+            <input name="book-img-url" placeholder="book's image's Url"></input></br>
+            <button type="submit">Add</button>
+        </form>
+    </section>
+    <section class="books-container"></section>
+
+    <div class="modal" hidden>
+        <h2>Book Details</h2>
+        <h3></h3>
+        <h4></h4>
+        <p></p>
+        <img></img>
+        <div class="rate-book">
+            <button class="low-value-rate" id="" onclick="onBtnChangeCurrValue(-1, this.id)">-</button>
+            <input id="" type="text" placeholder="" oninput="onSetRate(this.value, this.id)" />
+            <button class="high-value-rate" id="" onclick="onBtnChangeCurrValue(1, this.id)">+</button>
+        </div>
+        <button onclick="onCloseModal()">Close</button>
+    </div>
+    <section class="navBtn">
+        <button onclick="onBackPage()">Back Page</button><button onclick="onNextPage()">Next Page</button>
+    </section>
+    <script src="js/services/util-service.js"></script>
+    <script src="js/services/storage-service.js"></script>
+    <script src="js/services/book-shop-service.js"></script>
+    <script src="js/book-shop-controller.js"></script>
+</body>
+
+</html>

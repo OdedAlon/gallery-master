@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Touch Nums</title>
+</head>
+
+<body onload="initGame()">
+
+    <h1>Touch Nums!</h1>
+
+    <div>
+        <button onclick="chooseLevel(4)">level 1 (4x4)</button>
+        <button onclick="chooseLevel(5)">level 2 (5x5)</button>
+        <button onclick="chooseLevel(6)">level 3 (6x6)</button>
+    </div>
+    <br>
+    <div class="box"></div>
+
+    <section id="stopWatch"> <p id="timer"> Time : 0:000 </p> <p id="fulltime"> </p> 
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

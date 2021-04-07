@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    background-color: lightyellow;
+    text-align: center;
+}
+
+header {
+    background-color: lightgreen;
+    width: 100%;
+    height: 100px;
+}
+
+.books-table {
+    margin: 20px;
+    position: absolute;
+    left: 5%;
+    width: 90%;
+    background-color: #ffffff;
+    border-collapse: collapse;
+    border-width: 2px;
+    border-color: #1bb140;
+    border-style: solid;
+    color: #000000;
+}
+
+td, th {
+    border-width: 2px;
+    border-color: #1bb140;
+    border-style: solid;
+    padding: 3px;
+}
+
+thead {
+    background-color: #70f58b;
+}
+
+td img {
+    height: 100px;
+}
+
+.pressable {
+    background-color: rgb(33, 202, 33);
+}
+
+.pressable:hover {
+    background-color: rgb(247, 140, 140);
+    cursor: pointer;
+}
+
+.btn-delete, .btn-update, .btn-read {
+    border: inset 5px;
+    background-color: lightgray;
+}
+
+.btn-delete:hover, .btn-update:hover, .btn-read:hover {
+    background-color: rgb(247, 140, 140);
+    cursor: pointer;
+}
+
+.add-book button {
+    padding: 5px;
+}
+
+.add-book-modal {
+    width: 250px;
+    background-color: lightgray;
+    border: 1px solid;
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translatex(-50%);
+    z-index: 5;
+}
+
+.add-book-modal input {
+    margin: 20px;
+}
+
+.add-book-modal button {
+    margin: 20px;
+}
+
+.modal {
+    background-color: lightgray;
+    padding: 10px;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    height: 80%;
+    min-width: 300px;
+    text-align: center;
+}
+
+.modal img {
+    max-height: 200px;
+}
+
+.rate-book input{
+    width: 30px;
+    text-align: center;
+}
+
+.navBtn {
+    position: absolute;
+    bottom: 200px;
+    left: 10%;
+}

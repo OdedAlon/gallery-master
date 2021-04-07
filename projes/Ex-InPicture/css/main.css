@@ -1,0 +1,55 @@
+
+body {
+    text-align: center;
+    background-color: rgb(207, 248, 199);
+}
+
+.box {
+    box-align: center;
+    max-width: 600px;
+    margin: auto;
+    border: 1px solid rgb(188, 201, 206);
+    border-radius: 8px;
+    background-color: rgb(160, 128, 236);
+    padding: 10px;
+}
+
+button {
+    width: 550px;
+    margin: auto;
+    border: 1px solid rgb(188, 201, 206);
+    border-radius: 8px;
+    background-color: rgb(243, 240, 84);
+    padding: 10px;
+    font-family: arial;
+    font-style: bold;
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;
+    
+}
+
+button:hover {
+    background-color: rgb(241, 129, 85);
+    cursor: pointer;
+}
+
+.modal {
+    background-color: rgb(200, 211, 210);
+    display: none;
+    position: absolute;
+    top:10px;
+    right: 10px;
+    padding: 5px;
+    width: 300px;
+    border-style:solid;
+    border-width: 2px;
+    border-color: black
+}
+
+.modal button {
+    bottom;
+    width: 200px;
+    background-color: rgb(132, 84, 243);
+
+}
